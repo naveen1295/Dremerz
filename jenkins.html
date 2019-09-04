@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Dremerz - Jenkins</title>
+</head>
+
+<body>
+
+    <div class="">
+
+        <div class="">
+            <a href="index.html">Home Page</a>
+        </div>
+
+        <h1>
+            Jenkins
+        </h1>
+        <p>Jenkins is a software that allows <b>continuous integration</b>. Jenkins will be installed on a server where
+            the central build will take place. The following flowchart demonstrates a very simple workflow of how
+            Jenkins works.</p>
+        <img src="images/why_jenkins.jpg" alt="Why Jenkins" />
+        <p>Continuous Integration is a development practice that requires developers to integrate code into a shared
+            repository at regular intervals. This concept was meant to remove the problem of finding later occurrence of
+            issues in the build lifecycle. Continuous integration requires the developers to have frequent builds. The
+            common practice is that whenever a code commit occurs, a build should be triggered.</p>
+        <h2>System Requirements</h2>
+        <table>
+            <tr>
+                <td>JDK</td>
+                <td>JDK 1.5 or above</td>
+            </tr>
+            <tr>
+                <td>Memory</td>
+                <td>2 GB RAM (recommended)</td>
+            </tr>
+            <tr>
+                <td style="width:20%;">Disk Space</td>
+                <td>No minimum requirement. Note that since all builds will be stored on the Jenkins machines, it has to
+                    be ensured that sufficient disk space is available for build storage.</td>
+            </tr>
+            <tr>
+                <td style="width:34%;">Operating System Version</td>
+                <td>Jenkins can be installed on Windows, Ubuntu/Debian, Red Hat/Fedora/CentOS, Mac OS X, openSUSE,
+                    FReeBSD, OpenBSD, Gentoo.</td>
+            </tr>
+            <tr>
+                <td>Java Container</td>
+                <td>The WAR file can be run in any container that supports Servlet 2.4/JSP 2.0 or later.(An example is
+                    Tomcat 5).</td>
+            </tr>
+        </table>
+
+        <p>The official website for Jenkins is <a target="_blank" rel="nofollow"
+                href="https://jenkins-ci.org/">Jenkins</a>. If you click the given link, you can get the home page of
+            the Jenkins official website</p>
+
+        <h2>Starting Jenkins</h2>
+        <p>Open the command prompt. From the command prompt, browse to the directory where the jenkins.war file is
+            present. Run the following command</p>
+        <pre>
+            D:\&gt;Java –jar Jenkins.war
+        </pre>
+        <p>After the command is run, various tasks will run, one of which is the extraction of the war file which is
+            done by an embedded webserver called winstone.</p>
+        <pre>
+            Java –jar Jenkins.war
+            INFO: Beginning extraction from war file
+        </pre>
+        <p>Once the processing is complete without major errors, the following line will come in the output of the
+            command prompt.</p>
+        <pre>
+            INFO: Jenkins is fully up and running
+        </pre>
+        <h2>Accessing Jenkins</h2>
+        <p>Once Jenkins is up and running, one can access Jenkins from the link &minus; <b>http://localhost:8080</b></p>
+        <p>This link will bring up the Jenkins dashboard.</p>
+        <img src="/jenkins/images/accessing_jenkins.jpg" alt="Accessing Jenkins" />
+        <hr />
+    </div>
+
+</body>
+
+</html>

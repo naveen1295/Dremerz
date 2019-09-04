@@ -1,0 +1,29 @@
+body {
+
+  margin: 0;
+  font-family: 'Merriweather', serif;
+}
+
+hr {
+  border-style: none;
+  border-top-style: dotted;
+}
+
+
+em {
+  color: rgb(233, 132, 233);
+}
+
+
+
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 50px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 300px;
+  bottom: 400px;
+}

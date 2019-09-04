@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Dreamerz - GIT Details</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="">
+    <a href="index.php">Home Page</a>
+  </div>
+  <div class="tops-container">
+    <h1>GIT</h1>
+    <p>
+      This page will give you all the details on how and what to learn about git version controler. It will also provide you a sample projects for better understanding.
+      <br>Here is the pictorial view of git stages and features <br>
+      <img src="" alt="gitstagesandfeatures picture">
+    </p>
+  </div>
+
+  <div class="middles-container">
+
+    There are 2 ways to maintain your code.
+    <ol>
+      <li>
+        <strong>
+          Local repository:</strong> the files are maintained on your local system.
+        Below are the steps to maintain the files locally using git
+        <ul>
+          <li>
+            <p>
+              Initialise git : Create local empty git repository. ".git" file is created in the working directory. The command line Syntax is
+              <br>git init
+            </p>
+          </li>
+          <li>
+            <p>
+              Staging Area: A intermediate place to pick the files in working directory that we want to commit to git. We can add the files to stagging area by the following command line syntax:
+              <br>"git add ." <em> - this command will pick all the files in working directory</em>
+              <br>"git add filename.java"<em> - this command will pick the file filename.java</em>
+              <br>"git add *.java"<em> - this command will pick all the files with extension .java</em>
+              <br>"git rm --cached r ." <em> - all the files are removed from git stagging area </em>
+            </p>
+          </li>
+          <li>
+            <p>
+              Commit: To commit the files/changes to git local repository. The command line Syntac is
+              <br>git commit -m "<em>add the message here in present tense</em>"
+            </p>
+          </li>
+        </ul>
+      </li>
+      <li>
+<strong>Remote repository:</strong>
+         the files are uploaded to the GIT/github website and it can be shared with other people.
+        <br>Once the local repository is setup we can move/upload the files to github by following command line syntax
+        <br>
+        "git remote add origin <em> URL of github remote repository"
+        </em>
+        <br>
+        "git push -u origin master" <em>pushes the local repository to remote repository(origin) master branch using -u(links local and remote)</em>
+      </li>
+    </ol>
+    <hr>
+    Here are some useful tips
+    <ul>
+      <li>
+        "dir /a" <em> - this will list all the files in the directory including the hidden files</em>
+      </li>
+      <li>
+        "git status" <em>- it shows the status of the untracked files in the working directory (untracked files are files that are not in stagging area)</em>
+      </li>
+      <li>
+        "git log" <em>- this will list all the commits till now. press q to exit the edit file </em>
+      </li>
+      <li>
+        "git diff" <em> - this will list the differences between the current and last commited code</em>
+      </li>
+      <li>
+        "git checkout filename.ext" <em> - this will rollback the file to the last commited code. Ereases all the local changes.</em>
+        <br>"git checkout ." <em>this will rollback all the working directory code to the last commited code. </em>
+      </li>
+      <li>
+        on github account, navigate to insights >> graphs >> network. we see all the commit, branches and pull requests.
+      </li>
+    </ul>
+    <hr>
+    <h2>Gitignore</h2>
+    This is a hidden file in the working directory. All the files with extension listed in this file are not considered for Stagging and therefore not committed to local or remote repository.
+    These files can be user sensitive data or user specific files.The command line syntax to create
+    <br>touch .gitinore <em> - follow the exact name as git will be searching to this file name, it is casesensitive.</em>
+    <hr>
+    <h2>Cloning</h2>
+    Cloning a remote repository to local working directory. The command line syntax is
+    <br>"git clone <em>URL of the remote repository</em>"
+    <hr>
+    <h2>Branching and Merging</h2>
+    Master - Main Branch. We can create new branch/s, write and commit code to this branch through command line or github website. Later we can merge this branch with Main branch. Resolve any conflits.
+    The command line syntax is
+    <br>"git branch <em>branchname</em>"
+    <br>"git branch" <em>lists all the branches and * shows which branch is the current</em>
+    <br>"git checkout <em>branchname</em>" <em>changes the current branch to the branchname provided</em>
+    <br>for merge change to master branch
+    <br>"git merge branchname" <em>opens an editor to add a merge message. :q! to save and quit</em>
+    <br>"git push origin master -u" <em>pushes to code to remote repository</em>
+    <hr>
+    <h2>Forking, Pull Request and Mergning</h2>
+    This is a way to collobarate and working on the project. A person who doesn't have write access to my githug project they can copy(fork) the project
+    to thier own github account. Once they push the changes to their project, they can create a pull request to my project. I can review the changes and accept/reject the changes.
+    <br>Accept - pull the changes and merge their repository to mine, new commit.
+    <br>Reject - don't accept the changes
+<hr>
+  </div>
+  <div class="bottom-container">
+
+  </div>
+</body>
+
+</html>

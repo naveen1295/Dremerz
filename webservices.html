@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Dreamerz - Web Services</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <style>
+        table,
+        td,
+        th {
+            border: 1px solid black;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="">
+        <a href="index.html">Home Page</a>
+    </div>
+    <h1>
+        Web Services
+    </h1>
+    <ul>
+        <li>
+            <p>
+                The term Web services describes a standardized way of integrating Web-based applications using the XML,
+                SOAP, WSDL and UDDI open standards over an Internet protocol backbone.
+            </p>
+        </li>
+        <li>
+            <p>
+                XML is used to tag the data, SOAP is used to transfer the data, WSDL is used for describing the
+                services available and UDDI is used for listing what services are available.
+            </p>
+        </li>
+        <li>
+            <p>
+                These applications can be local, distributed, or web-based. Web services are built on top of open
+                standards such as TCP/IP, HTTP, Java, HTML, and XML.
+            </p>
+        </li>
+        <li>
+            <p>
+                Software applications written in various programming languages and running on various platforms can use
+                web services to exchange data over computer networks like the Internet. <br>
+                This interoperability (e.g.,
+                between Java and Python, or Windows and Linux applications) is due to the use of open standards.
+            </p>
+        </li>
+    </ul>
+    <hr>
+    <h3>
+        Web Service Components
+    </h3>
+    <p>
+        There are three major web service components
+    </p>
+    <ol>
+        <li> <strong> SOAP - Simple Object Access Protocol </strong></li>
+        <ul>
+            <li>
+                <p>
+                    XML bases protocol for accessing web services
+                </p>
+            </li>
+            <li>
+                <p>
+                    platform independent and language independent
+                </p>
+            </li>
+        </ul>
+        <li> <strong>WSDL - Web Services Description Language</strong></li>
+        <ul>
+            <li>
+                <p>
+                    WSDL is a xml document containing information about web services such as method name, method
+                    parameter and how to access it
+                </p>
+            </li>
+            <li>
+                <p>
+                    WSDL is a part of UDDI. It acts as a interface between web service applications
+                </p>
+            </li>
+        </ul>
+        <li> <strong>UDDI - Universal Description, Discovery and Integration</strong> </li>
+        <ul>
+            <li>
+                <p>
+                    UDDI is a directory of web service interfaces described by WSDL, containing information about web
+                    services.
+                </p>
+            </li>
+        </ul>
+    </ol>
+    <hr>
+    <img src="images/typesofwebservices.png" alt="SOAP and RESTful">
+    <ul>
+        <li>
+            <h3> <strong>SOAP</strong> </h3>
+            <ul>
+                <li>
+                    <p>
+                        SOAP defines a standard communication protocol (set of rules) specification for XML-based
+                        message exchange. SOAP uses different transport protocols, such as HTTP and SMTP.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        The Standard protocol HTTP makes it easier for SOAP model to tunnel across firewalls and proxies
+                        without any modifications to the SOAP protocol.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        WS Security: SOAP defines its own security known as WS Security.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Language and Platform independent: SOAP web services can be written in any programming language
+                        and executed in any platform.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Slow: SOAP uses XML format that must be parsed to be read. It defines many standards that must
+                        be followed while developing the SOAP applications. So it is slow and consumes more bandwidth
+                        and resource.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        WSDL dependent: SOAP uses WSDL and doesn't have any other mechanism to discover the service.
+                    </p>
+                </li>
+            </ul>
+
+        </li>
+        <li>
+            <h3>REST</h3>
+            <ul>
+                <li>
+                    <p>REST is an architectural style not a protocol.</p>
+                </li>
+                <li>
+                    <p>
+                        REST describes a set of architectural principles by which data can be transmitted over a
+                        standardized interface (such as HTTP).
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Fast: RESTful Web Services are fast because there is no strict specification like SOAP. It
+                        consumes less bandwidth and resource.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Language and Platform independent: RESTful web services can be written in any programming
+                        language and executed in any platform.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Can use SOAP: RESTful web services can use SOAP web services as the implementation.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Permits different data format: RESTful web service permits different data format such as Plain
+                        Text, HTML, XML and JSON.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        A client can access the resource using the unique URI and a representation of the resource is
+                        returned. With each new resource representation, the client is said to transfer state. While
+                        accessing RESTful resources with HTTP protocol, the URL of the resource serves as the resource
+                        identifier and GET, PUT, DELETE, POST and HEAD are the standard HTTP operations to be performed
+                        on that resource.
+                    </p>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <h1>SOAP vs REST Web Services</h1>
+    <p>There are many differences between SOAP and REST web services. The important 10 differences between SOAP and REST
+        are given below:</p>
+    <table style="">
+        <tr>
+            <th>No.</th>
+            <th>SOAP</th>
+            <th>REST</th>
+        </tr>
+        <tr>
+            <td>1)</td>
+            <td>SOAP is a <strong>protocol</strong>.</td>
+            <td>REST is an <strong>architectural style</strong>.</td>
+        </tr>
+        <tr>
+            <td>2)</td>
+            <td>SOAP stands for <strong>Simple Object Access Protocol</strong>.</td>
+            <td>REST stands for <strong>REpresentational State Transfer</strong>.</td>
+        </tr>
+        <tr>
+            <td>3)</td>
+            <td>SOAP <strong>can't use REST</strong> because it is a protocol.</td>
+            <td>REST <strong>can use SOAP</strong> web services because it is a concept and can use any protocol like
+                HTTP, SOAP.</td>
+        </tr>
+        <tr>
+            <td>4)</td>
+            <td>SOAP <strong>uses services interfaces to expose the business logic</strong>.</td>
+            <td>REST <strong>uses URI to expose business logic</strong>.</td>
+        </tr>
+        <tr>
+            <td>5)</td>
+            <td><strong>JAX-WS</strong> is the java API for SOAP web services.</td>
+            <td><strong>JAX-RS</strong> is the java API for RESTful web services.</td>
+        </tr>
+        <tr>
+            <td>6)</td>
+            <td>SOAP <strong>defines standards </strong> to be strictly followed. </td>
+            <td>REST does not define too much standards like SOAP.</td>
+        </tr>
+        <tr>
+            <td>7)</td>
+            <td>SOAP <strong>requires more bandwidth</strong> and resource than REST.</td>
+            <td>REST <strong>requires less bandwidth</strong> and resource than SOAP.</td>
+        </tr>
+        <tr>
+            <td>8)</td>
+            <td>SOAP <strong>defines its own security</strong>.</td>
+            <td>RESTful web services <strong>inherits security measures</strong> from the underlying transport.</td>
+        </tr>
+        <tr>
+            <td>9)</td>
+            <td>SOAP <strong>permits XML</strong> data format only.</td>
+            <td>REST <strong>permits different</strong> data format such as Plain text, HTML, XML, JSON etc.</td>
+        </tr>
+        <tr>
+            <td>10)</td>
+            <td>SOAP is <strong>less preferred</strong> than REST.</td>
+            <td>REST <strong>more preferred</strong> than SOAP.</td>
+        </tr>
+    </table>
+    <hr>
+    <h2>Service Oriented Architecture (SOA)</h2>
+    <p>Service Oriented Architecture or SOA is a design pattern. It is designed to provide services to other
+        applications through protocol. It is a concept only and not tied to any programming language or platform.</p>
+    <p>Web services is a technology of SOA most likely.</p>
+    <h3>Service</h3>
+    <p>A service is well-defined, self-contained function that represents unit of functionality. A service can exchange
+        information from another service. It is not dependent on the state of another service.</p>
+    <h3>Service Connections</h3>
+    <p>The figure given below illustrates the service oriented architecture. Service consumer sends service request to
+        the service provider and service provider sends the service response to the service consumer. The service
+        connection is understandable to both service consumer and service provider.</p>
+    <img src="images/soa.png" alt="SOA Connections" />
+
+    <hr>
+    <h1>Java Web Services Tutorial</h1>
+    <p> The java web service application can be accessed by other programming languages such as .Net
+        and PHP.</p>
+    <p>Java web service application perform communication through WSDL (Web Services Description Language). There are
+        two ways to write java web service application code: SOAP and RESTful.</p>
+    <hr />
+    <h2>Java Web Services API</h2>
+    <p>There are two main API's defined by Java for developing web service applications since JavaEE 6.</p>
+    <p>1) <strong>JAX-WS</strong>: for SOAP web services. The are two ways to write JAX-WS application code: by RPC
+        style and Document style.</p>
+    <p>2) <strong>JAX-RS</strong>: for RESTful web services. There are mainly 2 implementation currently in use for
+        creating JAX-RS application: Jersey and RESTeasy.</p>
+    <img src="images/java-web-services.png" alt="java web services" />
+
+    <hr>
+
+    <h1><strong>HTTP Methods</strong></h1>
+    <ul>
+        <li><a href="#get"><code>GET</code></a>
+            <ul>
+                <li>
+                    <p>
+                        GET method is used to retreive data from a server at the specified resource</p>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#post"><code>POST</code></a>
+            <ul>
+                <p>POST requests are used to send data to the API sever to create or udpate a resource.
+                    The data sent to the server is stored in the request body of the HTTP request.</p>
+            </ul>
+        </li>
+        <li><a href="#put"><code>PUT</code></a>
+            <ul>
+                <li>
+                    <p>Simlar to POST, PUT requests are used to send data to the API to create or update a resource. The
+                        difference is that PUT requests are idempotent. That is, calling the same PUT request multiple
+                        times will always produce the same result. In contrast, calling a POST request repeatedly make
+                        have side effects of creating the same resource multiple times.</p>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#head"><code>HEAD</code></a>
+            <ul>
+                <li>
+                    <p>The HEAD method is almost identical to GET, except without the response body. In other words, if
+                        GET /users returns a list of users, then HEAD /users will make the same request but won't get
+                        back the list of users.
+
+                        HEAD requests are useful for checking what a GET request will return before actually making a
+                        GET request -- like before downloading a large file or response body. Learn more about HEAD
+                        requests on MDN.
+
+                        It's worth pointing out that not every endpoint that supports GET will support HEAD - it
+                        completely depends on the API you're testing.</p>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#delete"><code>DELETE</code></a>
+            <ul>
+                <li>
+                    <p>The DELETE method is exactly as it sounds: delete the resource at the specified URL. This method
+                        is one of the more common in RESTful APIs so it's good to know how it works.
+
+                        If a new user is created with a POST request to /users, and it can be retrieved with a GET
+                        request to /users/{{userid}}, then making a DELETE request to /users/{{userid}} will completely
+                        remove that user.</p>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#patch"><code>PATCH</code></a>
+            <ul>
+                <li>
+                    <p>A PATCH request is one of the lesser-known HTTP methods, but I'm including it this high in the
+                        list since it is similar to POST and PUT. The difference with PATCH is that you only apply
+                        partial modifications to the resource.
+
+                        The difference between PATCH and PUT, is that a PATCH request is non-idempotent (like a POST
+                        request).
+
+                        To expand on partial modification, say you're API has a /users/{{userid}} endpoint, and a user
+                        has a username. With a PATCH request, you may only need to send the updated username in the
+                        request body - as opposed to POST and PUT which require the full user entity.</p>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#options"><code>OPTIONS</code></a>
+            <ul>
+                <li>
+                    <p>Last but not least we have OPTIONS requests. OPTIONS requests are one of my favorites, though not
+                        as widely used as the other HTTP methods. In a nutshell, an OPTIONS request should return data
+                        describing what other methods and operations the server supports at the given URL.
+
+                        OPTIONS requests are more loosely defined and used than the others, making them a good candidate
+                        to test for fatal API errors. If an API isn't expecting an OPTIONS request, it's good to put a
+                        test case in place that verifies failing behavior.</p>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <table class=>
+        <tr>
+            <th>HTTP Method</th>
+            <td>GET</td>
+        </tr>
+        <tr>
+            <th>URI</th>
+            <td>http://localhost:8080/UserManagement/rest/UserService/users</td>
+        </tr>
+        <tr>
+            <th>Operation</th>
+            <td>Get list of users</td>
+        </tr>
+        <tr>
+            <th>Operation Type</th>
+            <td>Read Only</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th>HTTP Method</th>
+            <td>GET</td>
+        </tr>
+        <tr>
+            <th>URI</th>
+            <td>http://localhost:8080/UserManagement/rest/UserService/users/1</td>
+        </tr>
+        <tr>
+            <th>Operation</th>
+            <td>Get user of Id 1</td>
+        </tr>
+        <tr>
+            <th>Operation Type</th>
+            <td>Read Only</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th>HTTP Method</th>
+            <td>POST</td>
+        </tr>
+        <tr>
+            <th>URI</th>
+            <td>http://localhost:8080/UserManagement/rest/UserService/users/2</td>
+        </tr>
+        <tr>
+            <th>Operation</th>
+            <td>Insert user with Id 2</td>
+        </tr>
+        <tr>
+            <th>Operation Type</th>
+            <td>Non-Idempotent</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th>HTTP Method</th>
+            <td>PUT</td>
+        </tr>
+        <tr>
+            <th>URI</th>
+            <td>http://localhost:8080/UserManagement/rest/UserService/users/2</td>
+        </tr>
+        <tr>
+            <th>Operation</th>
+            <td>Update User with Id 2</td>
+        </tr>
+        <tr>
+            <th>Operation Type</th>
+            <td>N/A</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th>HTTP Method</th>
+            <td>DELETE</td>
+        </tr>
+        <tr>
+            <th>URI</th>
+            <td>http://localhost:8080/UserManagement/rest/UserService/users/1</td>
+        </tr>
+        <tr>
+            <th>Operation</th>
+            <td>Delete User with Id 1</td>
+        </tr>
+        <tr>
+            <th>Operation Type</th>
+            <td>Idempotent</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th>HTTP Method</th>
+            <td>OPTIONS</td>
+        </tr>
+        <tr>
+            <th>URI</th>
+            <td>http://localhost:8080/UserManagement/rest/UserService/users</td>
+        </tr>
+        <tr>
+            <th>Operation</th>
+            <td>List the supported operations in web service</td>
+        </tr>
+        <tr>
+            <th>Operation Type</th>
+            <td>Read Only</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th>HTTP Method</th>
+            <td>HEAD</td>
+        </tr>
+        <tr>
+            <th>URI</th>
+            <td>http://localhost:8080/UserManagement/rest/UserService/users</td>
+        </tr>
+        <tr>
+            <th>Operation</th>
+            <td>Returns only HTTP Header, no Body</td>
+        </tr>
+        <tr>
+            <th>Operation Type</th>
+            <td>Read Only</td>
+        </tr>
+    </table>
+    <p>Here are important points to be considered:</p>
+    <ul>
+        <li>
+            <p>GET operations are read only and are safe.</p>
+        </li>
+        <li>
+            <p>PUT and DELETE operations are idempotent means their result will always same no matter how many times
+                these operations are invoked.</p>
+        </li>
+        <li>
+            <p>PUT and POST operation are nearly same with the difference lying only in the result where PUT operation
+                is idempotent and POST operation can cause different result.</p>
+        </li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)https://getbootstrap.com/docs/4.3/examples/starter-template/ -->
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="A place to manage documentation relating to TFS Automation">
+  
+  <meta name="generator" content="Jekyll v3.8.5">
+  <title>TFS Automation</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/styles.css" rel="stylesheet">
+  <link href="../css/completed-active.css" rel="stylesheet">
+</head>
+
+<body onload="loadNav()">
+      <div id=header></div>
+    <nav id=navbar class="navbar navbar-expand-md navbar-dark bg-dark"></nav>
+  <div>
+    <main role="main" class="container">
+        <h4 style="text-align:center; padding:1ch">COMPLETED JOBS</h4>
+      <p>
+        <table class="blueTable" id="myTable">
+          <thead>
+            <tr>
+              <th>JOB</th>
+              <th>ACTIVITY</th>
+              <th>SCOPE</th>
+              <th>ENV</th>
+              <th onclick="sortTable(4)" class="pointer">START DATE <img src="../images/sort.png" alt="" height="12"
+                  width="12"></th>
+              <th onclick="sortTable(5)" class="pointer">END DATE <img src="../images/sort.png" alt="" height="12"
+                  width="12"></th>
+              <th onclick="sortTable(6)" class="pointer">REQUEST BY <img src="../images/sort.png" alt="" height="12"
+                  width="12"></th>
+              <th>OWNER</th>
+              <th>STATUS</th>
+              <th>COMMENTS</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            
+            <tr>
+              <td align="center">18</td>
+              <td> <a href="../Jobs/Job18.html">REGRESSION RUN</a> </td>
+              <td>QUANTUM CA and DP3 REGRESSION</td>
+              <td>STG1</td>
+              <td>2019/08/26</td>
+              <td>2019/08/29</td>
+              <td>FUJI & HIDA</td>
+              <td>NAVEEN</td>
+              <td>COMPLETED</td>
+              <td></td>
+            </tr>
+            
+              <tr>
+                  <td align="center">8</td>
+                  <td><a href="../Jobs/Job8.html">SCRIPT DEVELOPMENT</a></td>
+                  <td>CHANGE TO EXPENSE SCREEN FOR INDIVIDUAL, INDIVIDUAL BUSINESS & SOLE TRADER</td>
+                  <td>STG2</td>
+                  <td>2019/08/16</td>
+                  <td>2019/08/22</td>
+                  <td>FUJI & HIDA</td>
+                  <td>JOSH, NAVEEN</td>
+                  <td>COMPLETED</td>
+                  <td></td>
+                </tr>
+    
+                <tr>
+                  <td align="center">13</td>
+                  <td><a href="../Jobs/Job13.html">REGRESSION RUN</a></td>
+                  <td>QUANTUM CA and DP3 REGRESSION</td>
+                  <td>STG2</td>
+                  <td>2019/08/19</td>
+                  <td>2019/08/22</td>
+                  <td>FUJI & HIDA</td>
+                  <td>Naveen</td>
+                  <td>COMPLETED</td>
+                  <td></td>
+                </tr>
+    
+            <tr>
+              <td align="center">0</td>
+              <td><a href="../jobs/Job0.html">SCRIPT MAINTENANCE</a></td>
+              <td>PROJECT CLEANUP - REMOVE DUPLICATS AND FIX SCRIPT ERRORS</td>
+              <td>STG2</td>
+              <td>2019/07/03</td>
+              <td>2019/08/01</td>
+              <td>QUANTUM</td>
+              <td>JOSH, NAVEEN</td>
+              <td>COMPLETED</td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td align="center">3</td>
+              <td><a href="../jobs/Job3.html">REGRESSION RUN</a></td>
+              <td>QUANTUM FULL REGRESSION FOR TUNE RELEASE</td>
+              <td>STG1</td>
+              <td>2019/07/15</td>
+              <td>2019/07/31</td>
+              <td>QUANTUM - TUNE</td>
+              <td>JOSH, NAVEEN</td>
+              <td>COMPLETED</td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td align="center">5</td>
+              <td><a href="./../jobs/Job5.html">SCRIPT DEVELOPMENT</a></td>
+              <td>USER STORY AUTOMATION</td>
+              <td>STG2</td>
+              <td>2019/07/15</td>
+              <td>2019/07/26</td>
+              <td>QUANTUM - TUNE</td>
+              <td>JOSH</td>
+              <td>COMPLETED</td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td align="center">4</td>
+              <td><a href="../jobs/Job4.html">REGRESSION RUN</a></td>
+              <td>QUANTUM CA and DP3 REGRESSION (Round 2) FOR TUNE RELEASE</td>
+              <td>STG1</td>
+              <td>2019/07/25</td>
+              <td>2019/07/31</td>
+              <td>QUANTUM - TUNE</td>
+              <td>JOSH</td>
+              <td>COMPLETED</td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td align="center">9</td>
+              <td><a href="../jobs/Job9.html">TEST DATA CREATION</a></td>
+              <td>INFLIGHT DATA CREATION FOR US-1677, US-2676, US-2494</td>
+              <td>STG2</td>
+              <td>2019/08/01</td>
+              <td>2019/08/05</td>
+              <td>QUANTUM - PRICING</td>
+              <td>NAVEEN</td>
+              <td>COMPLETED</td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td align="center">2</td>
+              <td><a href="../jobs/Job2.html">REGRESSION RUN</a></td>
+              <td>QUANTUM CA DP3 REGRESSION</td>
+              <td>STG2</td>
+              <td>2019/07/29</td>
+              <td>2019/08/01</td>
+              <td>FUJI & HIDA</td>
+              <td>JOSH</td>
+              <td>COMPLETED</td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td align="center">1</td>
+              <td><a href="../jobs/Job1.html">TEST DATA CREATION</a></td>
+              <td>APPLICATION CREATION</td>
+              <td>STG1</td>
+              <td>2019/08/01</td>
+              <td>2019/08/07</td>
+              <td>RLO TRAINING</td>
+              <td>JOSH</td>
+              <td>COMPLETED</td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td align="center">10</td>
+              <td><a href="../jobs/Job10.html">SCRIPT DEVELOPMENT</a></td>
+              <td>INCLUDE 4 SCENARIOS IN FO SUITE AND UPDATE CA FOR CONTRACT ACTIVATION</td>
+              <td>STG2</td>
+              <td>2019/08/13</td>
+              <td>2019/08/13</td>
+              <td> <a href="./../jobs/Documents/Trade-In Price - Scenarios to be automated.msg">QUANTUM - REMEDIATION</a> </td>
+              <td>JOSH, NAVEEN</td>
+              <td>COMPLETED</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+
+    </main><!-- /.container -->
+    <script src="../js/myScript.js"></script>
+    <script src="../js/navBar.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

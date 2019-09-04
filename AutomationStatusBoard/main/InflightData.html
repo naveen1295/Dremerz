@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)https://getbootstrap.com/docs/4.3/examples/starter-template/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A place to manage documentation relating to TFS Automation">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>TFS Automation</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+    <link href="../css/inflights-active.css" rel="stylesheet">
+  </head>
+  <body onload="loadNav()">
+        <div id=header></div>
+    <nav id=navbar class="navbar navbar-expand-md navbar-dark bg-dark"></nav>
+
+    <main role="main" class="container" style="color: rgba(245, 245, 245, 0.664);">
+
+    <h4 style="text-align:center; padding:1ch">Test Data Creation</h4>
+    <p style="line-height: 3ch; padding-left: 7ch; padding-right: 15ch; "> The script can create Quote/Application with
+        data options for Finance type, Borrower Type, GFV, Application Status, Campaign and if you want to use random
+        data or provide own data in the excel for Individual. Below are the detail steps eplaining how to create the
+        excel sheet with inflight data that you need to provide to Automation Team.
+        <br><a href="../suites/DataSheet.xlsx">Click here</a> to download the sample inflight excel sheet and follow below
+        instructions in filling the excel.
+        <ul style="line-height: 3ch; padding-left: 9ch">
+            <li style="color: rgb(104, 177, 134)">Do not add/delete any columns in the excel. Do not rename the excel or excel sheet
+                names</li>
+            <li>Each row in the excel represent either a Quote/Application to be created</li>
+            <li> <strong>Mandatory Fields:</strong> These columns in the excel need to have data
+                <ul>
+                    <li>columns <span style="color: rgb(104, 177, 134)">E,F,G,H,J,K,L</span></li>
+                    <li>Please select the values from the dropdown, do not copy paste or type any data into these excel
+                        cells</li>
+                    <li>If you want a new row, copy paste the existing row and select values from drop down for above
+                        columns</li>
+                    <li>Column <span style="color: rgb(104, 177, 134)">G</span> - Status</li>
+                    <ol>
+                        <li>'Blank' with Quote combination means create Quote till loan details page</li>
+                        <li>'Blank' with application combination means create quote and convert it into appliation on
+                            borrower
+                            screen</li>
+                        <li>Rest of the status are self explanatory in the excel</li>
+                    </ol>
+                </ul>
+            </li>
+
+            <li> <strong>Optional Fields:</strong>
+                <ul>
+                    <li>Column <span style="color: rgb(104, 177, 134)">I</span> - Campaign, Make sure there are no spelling mistakes or extra spaces </li>
+                    <li>Below columns in the excel need to have data only if column <span style="color: rgb(104, 177, 134)">L</span>
+                        has "Yes"</li>
+                </ul>
+            </li>
+            <li style="color: rgb(104, 177, 134)">Always copy data to notepad and then to excel, this will eliminate any special characters copied</li>
+            
+        </ul>
+
+        </tbody>
+        </table>
+    </p>
+</main><!-- /.container -->
+<script src="../js/myScript.js"></script>
+<script src="../js/navBar.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
